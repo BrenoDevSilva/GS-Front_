@@ -1,0 +1,247 @@
+$cor-site: #00395f;
+$cor-site2: #ffffff;
+$text-color: rgb(0, 0, 0);
+$cor-fundo:rgb(255, 255, 255);
+
+.body{
+    background-color: $cor-fundo;
+    padding: 2rem;
+}
+
+main {
+    width: 60%;
+
+    .main_img {
+        width: 97%;
+        height: 500px;
+        object-fit: cover;
+        padding: 1rem;
+    }
+
+    .main_info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 3rem;
+        gap: 3rem;
+        
+
+        .main-title {
+            font-size: 40px;
+            color: $text-color;
+        }
+
+        @media screen and (max-width: 720px) {
+            flex-direction: column;
+        }
+    }
+
+    .div-button {
+        display: flex;
+        padding: 4%;
+        justify-content: end;
+        color: $cor-site2;
+        text-decoration: none;
+
+        .main-button {
+            text-decoration: none;
+            border: 1px solid $cor-site;
+        }
+
+        .main-button:hover {
+            text-decoration: none;
+            border: 1px solid $cor-site;
+            background-color: $cor-site;
+        }
+        
+        #botao {
+            color: $cor-site;
+            font-weight: 400;
+            text-decoration: none;
+        }
+
+        #botao:hover {
+            color: $cor-site2;
+            font-weight: 400;
+            text-decoration: none;
+        }
+    }
+}
+
+.main {
+    .text-box {
+        margin-left: 44vw;
+       margin-top: 42vh;
+    }
+    
+    .btn:link,
+    .btn:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 15px 40px;
+        display: inline-block;
+        border-radius: 100px;
+        transition: all .2s;
+        position: absolute;
+    }
+    
+    .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .btn:active {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .btn-white {
+        background-color: #fff;
+        color: #777;
+    }
+    
+    .btn::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+    
+    .btn-white::after {
+        background-color: #fff;
+    }
+    
+    .btn:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+    }
+    
+    .btn-animated {
+        animation: moveInBottom 5s ease-out;
+        animation-fill-mode: backwards;
+    }
+    
+    @keyframes moveInBottom {
+        0% {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
+    .div-button {
+        display: flex;
+        padding: 4%;
+        justify-content: end;
+        text-decoration: none;
+
+    .div-button:hover{
+        color: #ffffff;
+    }
+
+        .main-button {
+            text-decoration: none;
+            border: 1px solid $cor-site;
+        }
+    }
+
+  }
+
+.title_int {
+    text-align: center;
+}
+
+aside {
+    
+    .aside-container {
+        border: 1px solid $cor-site;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+
+        .aside-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+        }
+    }
+}
+
+.vantagens{
+    .vantagens-titulo{
+        font-size: 40px;
+        margin: 3rem 0 2rem 3rem;
+    }
+    
+    .cards{
+        display: flex;
+        margin: 1.5rem;
+    }
+    .vantagens-article{
+        display: flex;
+        .article-img{
+            height: 19rem;
+            width: 15rem;
+            object-fit: cover;
+            border: 2px ridge $cor-site;
+            border-radius: 15px;
+            box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.6);
+        }
+        @media screen and (max-width: 720px) {
+            .article-img{
+                width: 10rem;
+            }
+        }
+        @media screen and (max-width: 360px){
+            .article-img{
+                width: 12.5rem;
+                height: 16rem;
+            }
+        }
+        .vantagens-numero{
+            font-size: 32px;
+            margin: 1rem 0.5rem;
+        }
+        .article-div{
+            margin-right: 1.5rem;
+        }
+    }
+    @media screen and (max-width: 360px) {
+        .vantagens-article{
+            flex-direction: column;
+        }
+        .article-img{
+            width: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .Home{
+        flex-direction: column;
+    }
+    main{
+        width: 100%;
+        .main-button{
+            margin-right: 3rem;
+        }
+    }
+    aside{
+        width: 100%;
+        margin: 3rem 0;
+    }
+}
+
+
+

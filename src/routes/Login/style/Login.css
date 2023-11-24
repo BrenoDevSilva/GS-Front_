@@ -1,0 +1,73 @@
+.container_img {
+  text-align: center;
+  margin: 1rem;
+}
+
+.form-img {
+  border-radius: 15px;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.login .card {
+  background-color: #00395f;
+  border: 3px solid #0075c5;
+  margin: 2rem 0 0 3rem;
+  border-radius: 10%;
+  width: 36rem;
+  padding: 1rem;
+}
+.login .card .login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.01rem 0.5rem 1rem 0.5rem;
+}
+.login .card .login-titulo {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 0.2rem;
+  color: #ffffff;
+}
+.login .card .form-img {
+  width: 15rem;
+  margin-bottom: 3rem;
+}
+.login .card .form-label {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  color: #ffffff;
+}
+.login .card .input {
+  width: 30rem;
+  margin: 1% 1% 1% 1%;
+}
+.login .card .login-button {
+  color: #2a25b5;
+  border: 1px solid #2a25b5;
+  background-color: aliceblue;
+}
+.login .card .login-button:hover {
+  background-color: #0075c5;
+  color: #ffffff;
+}
+.login .card .buttonarea {
+  display: flex;
+  justify-content: end;
+}
+@media screen and (max-width: 800px) {
+  .login .card .login-form {
+    margin: 3rem;
+  }
+  .login .card .input {
+    width: 15rem;
+    color: rgb(0, 0, 0);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+}/*# sourceMappingURL=Login.css.map */
